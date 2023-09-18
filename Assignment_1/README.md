@@ -6,3 +6,8 @@ For this first assignment, I teamed up with Ryan Wu. We based the concept of our
 
 ![first sketch](IMG_2031.PNG)
 ![second sketch](IMG_2032.PNG)
+
+## Date: 9/18/2023:
+
+![first sketch](IMG_2031.PNG)
+![second sketch](IMG_2032.PNG)
