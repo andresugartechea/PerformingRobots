@@ -9,6 +9,6 @@ For this first assignment, I teamed up with Ryan Wu. We based the concept of our
 
 ## Date: 9/18/2023:
 
-![first sketch: base](base1.jpg)
+![first sketch: base](base1.jpg | width=100)
 ![second sketch: base](base2.jpg)
 ![third sketch: base](base3.jpg)
