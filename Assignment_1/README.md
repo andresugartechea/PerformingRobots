@@ -4,11 +4,8 @@
 
 For this first assignment, I teamed up with Ryan Wu. We based the concept of our first robot on the [_"larva"_ masks](https://www.nakupelle.com/masks/Resources/larvals1.gif), which are used in theater to make the audience focus on the moves of the actors rather than on their facial expressions. We took an ironic take by not adding any body extremity, so our robot is only a giant _"larva"_ face. 
 
-<img src="IMG_2031.PNG" width ="350" />
-<img src="IMG_2032.PNG" width ="350" />
+<img src="IMG_2031.PNG" width ="350" /> <img src="IMG_2032.PNG" width ="350" />
 
 ## Date: 9/18/2023:
 
-<img src="base1.jpg" width ="300" />
-<img src="base2.jpg" width ="300" />
-<img src="base3.jpg" width ="300" />
+<img src="base1.jpg" width ="300" /> <img src="base2.jpg" width ="300" /> <img src="base3.jpg" width ="300" />
