@@ -10,6 +10,8 @@ For this first assignment, I teamed up with Ryan Wu. We based the concept of our
 
 <img src="base1.jpg" height ="275" /> <img src="base2.jpg" height ="275" /> <img src="base3.jpg" height ="275" />
 
+To make the motors move, I used [Prof. Michael Shiloh's code](https://github.com/michaelshiloh/PerformingRobots/blob/master/lectureNotes.md#todays-lecture) shown in his class _Performing Robots_.
+
 ```
 void setup() {
   // Pins 2 and 3 are connected to In1 and In2 respectively
