@@ -9,3 +9,25 @@ For this first assignment, I teamed up with Ryan Wu. We based the concept of our
 ## Date: 9/18/2023:
 
 <img src="base1.jpg" height ="275" /> <img src="base2.jpg" height ="275" /> <img src="base3.jpg" height ="275" />
+
+```
+void setup() {
+  // Pins 2 and 3 are connected to In1 and In2 respectively
+  // of the L298 motor driver
+  pinMode(2, OUTPUT);
+  pinMode(3, OUTPUT);
+}
+
+void loop() {
+  // make the motor turn in one direction
+  digitalWrite(2, LOW);
+  digitalWrite(3, HIGH);
+  delay(5000); // let it turn for 5 seconds
+
+  // now reverse direction
+  digitalWrite(2, HIGH);
+  digitalWrite(3, LOW);
+  delay(5000);
+}
+
+```
