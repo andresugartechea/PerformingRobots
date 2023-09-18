@@ -8,9 +8,17 @@ For this first assignment, I teamed up with Ryan Wu. We based the concept of our
 
 ## Date: 9/18/2023:
 
-This week, my teammate and I constructed the base for our robot. 
+This week, my teammate and I constructed the base for our robot. The instructions were straightforward, so the only complication that we found was how slow we were doing things since it had been a while since we had used power tools. 
 
-<img src="base1.jpg" height ="275" /> <img src="base2.jpg" height ="275" /> <img src="base3.jpg" height ="275" />
+<img src="base1.jpg" height ="275" /> 
+
+It was Ryan's first time soldering, so in order to practice and get familiar with the tools, he was in charge of soldering extension cables for our wires.
+
+<img src="base2.jpg" height ="275" /> 
+
+This is how our base looks thus far:
+
+<img src="base3.jpg" height ="275" />
 
 To make the motors move, I used [Prof. Michael Shiloh's code](https://github.com/michaelshiloh/PerformingRobots/blob/master/lectureNotes.md#todays-lecture) shown in his class _Performing Robots_.
 
