@@ -43,6 +43,11 @@ void loop() {
 }
 
 ```
+### Response to _Chapter 7: Machines/Mechanicals_ from the book _Entangled: Technology and the Transformation of Performance_ by Chris Salter
+
+Chapter 7 of Chris Salter's book explores machine performance with some intriguing aspects that captivated my attention. Firstly, the concept of the Survival Research Lab's perception of machine performance challenged my view of machines as lifeless tools by offering a deep perspective on human's relationship with technology. The Lab's works respond to the idealized visions of technology from the past, placing it in the context of modern warfare technology. The Lab's standpoint was ambiguous since it was not clear whether it praises or criticizes post-industrial systems, but it's reflective of our ambivalence towards progress. Secondly, the chapter also explores the relatability of humans to robots, highlighting that it's through behavioral aspects and not appearance that we find a connection to technology. This idea extends to non-anthropomorphic robots like Wall-E, showcasing how actions and perceived emotions resonate with audiences. This concept applies to various mediums, emphasizing the importance of intentions behind creations in storytelling.
+
+In conclusion, these aspects prompt us to reevaluate our relationship with technology and performance. They encourage experimentation in technology-driven art, highlighting the significance of actions and intentions. Salter's exploration urges us to examine our role in the post-industrial era's machinery and its impact on our perceptions of the mechanical and digital.
 
 ## Date: 9/20/2023:
 
