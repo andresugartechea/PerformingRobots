@@ -265,6 +265,6 @@ void allStop (){
 ```
 ## Date: 10/2/2023:
 
-[code](Assignment_1/radio.ino)
+[code](https://github.com/andresugartechea/PerformingRobots/blob/main/Assignment_1/radio.ino)
 
 [See how our robot works](https://youtube.com/shorts/ZL0ev7xhc8I?si=3kyrEY1AkpIOF1KU)
