@@ -81,14 +81,14 @@ void front() {
   digitalWrite(motors_2, LOW);
   digitalWrite(motors_3, HIGH);
   digitalWrite(motors_4, LOW);
-  Serial.println("backkk");
+  Serial.println("front");
 }
 void back() {
   digitalWrite(motors_1, LOW);
   digitalWrite(motors_2, HIGH);
   digitalWrite(motors_3, LOW);
   digitalWrite(motors_4, HIGH);
-  Serial.println("fronttttt");
+  Serial.println("back");
 }
 void oneWheelCW() { // delayy controls angle to turn
   digitalWrite(motors_1, HIGH);
