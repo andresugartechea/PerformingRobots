@@ -1,4 +1,8 @@
 /*
+
+//NOTES TO CONTROL THE SPEED:
+//use "constraint()", change "digitalWrite()" to "analogWrite()" and add "map[]"
+
    Minimal decoding of multiple RC channels using pin change interrupts
 
    Does not check for reasonable values or timeouts
