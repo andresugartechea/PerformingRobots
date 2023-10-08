@@ -1,5 +1,6 @@
+# WEEK 5 | Sept, 25 & 27
 
-## Date: 9/25/2023:
+## Date: 9/25/2023 |
 
 
 To make the robot write "LOVE" in Morse code. 
@@ -129,8 +130,3 @@ void allStop (){
   digitalWrite(5,LOW);
 }
 ```
-## Date: 10/2/2023:
-
-[code](https://github.com/andresugartechea/PerformingRobots/blob/main/Assignment_1/radio_controls_wheels.ino)
-
-[See how our robot works](https://youtube.com/shorts/ZL0ev7xhc8I?si=3kyrEY1AkpIOF1KU)
