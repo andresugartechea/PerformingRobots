@@ -23,3 +23,10 @@ if (rc_values[RC_CH2] > 18) turnRight();
 ```
 
 You can click [here to see the Arduino code](code/radio_controls_wheels.ino), and [here to watch on YouTube](https://www.youtube.com/shorts/7YG41S5zT0k) how it looks in real life!
+
+
+## Date: 10/4/2023 |
+
+I went back to work with Ryan due to some confusion with the robots assigned to each group. Nobody was working on our robot before, so we were a bit behind. During class, we finished soldering the H-bridge and paired the hobby RC transmitter. However, the motors were not moving the way we wanted and the Music Maker Shield was not able to play our songs. 
+
+The potential solutions to test next week are to verify that the Arduino pins are accurately written on the code, and to try a different SD for the Music Maker Shield.
