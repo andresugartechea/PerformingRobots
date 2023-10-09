@@ -132,19 +132,17 @@ void setup() {
 void loop() {
   rc_read_values();
 
-  front();
-
   Serial.print("CH1:"); Serial.print(rc_values[RC_CH1]); Serial.print("\t\t");
   Serial.print("CH2:"); Serial.println(rc_values[RC_CH2]);
-  // Serial.print("CH3:"); Serial.print(rc_values[RC_CH3]); Serial.print("\t");
-  // Serial.print("CH4:"); Serial.println(rc_values[RC_CH4]);
+  Serial.print("CH3:"); Serial.print(rc_values[RC_CH3]); Serial.print("\t");
+  Serial.print("CH4:"); Serial.println(rc_values[RC_CH4]);
 
   // use whichever channel is the trigger to control forward and reverse movement
-  //if (rc_values[RC_CH2] > 1600) front();
-  //else if (rc_values[RC_CH2] < 1400) back();
-  //else if (rc_values[RC_CH1] > 1600) oneWheelACW();
-  //else if (rc_values[RC_CH1] < 1400) oneWheelCW();
-  //else if ((rc_values[RC_CH1] < 1600) && (rc_values[RC_CH1] > 1400) && (rc_values[RC_CH2] < 1600) && (rc_values[RC_CH2] > 1400)) stop();
+  if (rc_values[RC_CH2] > 1600) front();
+  else if (rc_values[RC_CH2] < 1400) back();
+  else if (rc_values[RC_CH1] > 1600) oneWheelACW();
+  else if (rc_values[RC_CH1] < 1400) oneWheelCW();
+  else if ((rc_values[RC_CH1] < 1600) && (rc_values[RC_CH1] > 1400) && (rc_values[RC_CH2] < 1600) && (rc_values[RC_CH2] > 1400)) stop();
 
 
   delay(200);
