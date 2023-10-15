@@ -11,6 +11,24 @@
   24 may 2022 - ms - changed RC_CHx_PIN names
   15 sep 2022 - ms - changed pin numbers to new assignments
 
+
+  Important information to set up:
+
+  Radio Channel - Arduino Pin
+  1-7
+  2-6
+  3-5
+  4-4
+
+  Arduino Pin - Motor Pin (left to right)
+  - Right wheel
+  3-3
+  10-4
+  - Left wheel
+  9-2
+  11-1
+
+
 */
 
 
@@ -31,10 +49,13 @@
 #define RC_CH3_PIN  5
 #define RC_CH4_PIN  4
 
-#define motors_1 3
+//Left wheel
+#define motors_1 11
 #define motors_2 9
-#define motors_3 10
-#define motors_4 11
+
+//Right wheel
+#define motors_3 3
+#define motors_4 10
 
 uint16_t rc_values[RC_NUM_CHANNELS];
 uint32_t rc_start[RC_NUM_CHANNELS];
@@ -68,8 +89,29 @@ void calc_ch4() {
   calc_input(RC_CH4, RC_CH4_PIN);
 }
 
+///// To control each wheel
 
-///// motor control
+void LW_forward() { //Left Wheel Forward
+  digitalWrite(motors_1, HIGH);
+  digitalWrite(motors_2, LOW);
+}
+
+void LW_reverse() { // Left Wheel Reverse
+  digitalWrite(motors_1, LOW);
+  digitalWrite(motors_2, HIGH);
+}
+
+void RW_forward() { // delayy controls angle to turn
+  digitalWrite(motors_3, LOW);
+  digitalWrite(motors_4, HIGH);
+}
+
+void RW_reverse() { // delayy controls angle to turn
+  digitalWrite(motors_3, HIGH);
+  digitalWrite(motors_4, LOW);
+}
+
+///// To move
 
 void stop() {
   digitalWrite(motors_1, LOW);
@@ -78,32 +120,26 @@ void stop() {
   digitalWrite(motors_4, LOW);
 }
 
-void front() {
-  digitalWrite(motors_1, HIGH);
-  digitalWrite(motors_2, LOW);
-  digitalWrite(motors_3, HIGH);
-  digitalWrite(motors_4, LOW);
-  Serial.println("FRONT");
-}
 void back() {
-  digitalWrite(motors_1, LOW);
-  digitalWrite(motors_2, HIGH);
-  digitalWrite(motors_3, LOW);
-  digitalWrite(motors_4, HIGH);
+  RW_reverse();
+  LW_reverse();
   Serial.println("BACK");
 }
-void oneWheelCW() { // delayy controls angle to turn
-  digitalWrite(motors_1, HIGH);
-  digitalWrite(motors_2, LOW);
-  digitalWrite(motors_3, LOW);
-  digitalWrite(motors_4, LOW);
+void front() {
+  RW_forward();
+  LW_forward();
+  Serial.println("FRONT");
+}
+void turn_left() { // delayy controls angle to turn
+  LW_forward();
+  RW_reverse();
+  Serial.println("RIGHT");
 
 }
-void oneWheelACW() { // delayy controls angle to turn
-  digitalWrite(motors_1, LOW);
-  digitalWrite(motors_2, LOW);
-  digitalWrite(motors_3, HIGH);
-  digitalWrite(motors_4, LOW);
+void turn_right() { // delayy controls angle to turn
+  LW_reverse();
+  RW_forward();
+  Serial.println("LEFT");
 }
 
 
@@ -121,10 +157,11 @@ void setup() {
   enableInterrupt(RC_CH3_PIN, calc_ch3, CHANGE);
   enableInterrupt(RC_CH4_PIN, calc_ch4, CHANGE);
 
-  pinMode(motors_1, INPUT);
-  pinMode(motors_2, INPUT);
-  pinMode(motors_3, INPUT);
-  pinMode(motors_4, INPUT);
+  pinMode(motors_1, OUTPUT);
+  pinMode(motors_2, OUTPUT);
+  pinMode(motors_3, OUTPUT);
+  pinMode(motors_4, OUTPUT);
+  stop();
 }
 
 
@@ -132,16 +169,17 @@ void setup() {
 void loop() {
   rc_read_values();
 
-  Serial.print("CH1:"); Serial.print(rc_values[RC_CH1]); Serial.print("\t\t");
-  Serial.print("CH2:"); Serial.println(rc_values[RC_CH2]);
+
+  Serial.print("CH1:"); Serial.print(rc_values[RC_CH1]); Serial.print("\t");
+  Serial.print("CH2:"); Serial.print(rc_values[RC_CH2]); Serial.print("\t");
   Serial.print("CH3:"); Serial.print(rc_values[RC_CH3]); Serial.print("\t");
   Serial.print("CH4:"); Serial.println(rc_values[RC_CH4]);
 
   // use whichever channel is the trigger to control forward and reverse movement
   if (rc_values[RC_CH2] > 1600) front();
   else if (rc_values[RC_CH2] < 1400) back();
-  else if (rc_values[RC_CH1] > 1600) oneWheelACW();
-  else if (rc_values[RC_CH1] < 1400) oneWheelCW();
+  else if (rc_values[RC_CH1] > 1600) turn_left();
+  else if (rc_values[RC_CH1] < 1400) turn_right();
   else if ((rc_values[RC_CH1] < 1600) && (rc_values[RC_CH1] > 1400) && (rc_values[RC_CH2] < 1600) && (rc_values[RC_CH2] > 1400)) stop();
 
 
