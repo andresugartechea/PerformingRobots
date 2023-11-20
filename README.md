@@ -9,3 +9,8 @@ Weekly homework:
 [Week 6 (Oct, 2 & 4)](https://github.com/andresugartechea/PerformingRobots/tree/main/week_6/WEEK6.md): Controlling robot with RC remote control, H-bridge soldered, and Music Maker Shield paired.<br>
 [Week 7 (Oct, 9 & 11)](https://github.com/andresugartechea/PerformingRobots/tree/main/week_7/WEEK7.md): Completition of last week's tasks.<br>
 [Week 8 (Oct, 16 & 18)](https://github.com/andresugartechea/PerformingRobots/tree/main/week_8/WEEK8.md): NeoMatrix and Music Maker Shield.
+[Week 9 (Oct 28)](https://github.com/andresugartechea/PerformingRobots/tree/main/week_9/WEEK9.md): NeoMatrix and Music Maker Shield.
+
+Writing Assignments: 
+
+[First Paper: Of Sisyphus, Robots and Absurdism](https://github.com/andresugartechea/PerformingRobots/blob/main/week_9/first_essay/Paper%20-%20Of%20Sisyphus%2C%20Robots%20and%20Absurdism.pdf)
