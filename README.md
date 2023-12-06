@@ -10,7 +10,7 @@ Weekly homework:
 [Week 7 (Oct, 9 & 11)](https://github.com/andresugartechea/PerformingRobots/tree/main/week_7/WEEK7.md): Completition of last week's tasks.<br>
 [Week 8 (Oct, 16 & 18)](https://github.com/andresugartechea/PerformingRobots/tree/main/week_8/WEEK8.md): NeoMatrix and Music Maker Shield.<br>
 [Week 9 (Oct 28)](https://github.com/andresugartechea/PerformingRobots/tree/main/week_9/WEEK9.md): Script, first paper and design of robot.<br>
-[Week 10 - 12](https://github.com/andresugartechea/PerformingRobots/tree/main/week_10_12/WEEK10_12.md): Robot mechanically and electrically functional.
+[Week 10 - 12](https://github.com/andresugartechea/PerformingRobots/tree/main/week_10-12/WEEK10_12.md): Robot mechanically and electrically functional.
 
 Writing Assignments: 
 
