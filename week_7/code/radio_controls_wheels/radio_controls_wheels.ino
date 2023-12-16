@@ -130,13 +130,13 @@ void front(int value) {
   LW_forward(value);
   Serial.println("FRONT");
 }
-void turn_left(int value) { // delayy controls angle to turn
+void turn_right(int value) { //
   LW_forward(value);
   RW_reverse(value);
   Serial.println("RIGHT");
 
 }
-void turn_right(int value) { // delayy controls angle to turn
+void turn_left(int value) { //
   LW_reverse(value);
   RW_forward(value);
   Serial.println("LEFT");
@@ -179,13 +179,14 @@ void loop() {
 
   if ((rc_values[RC_CH1] == 0) && (rc_values[RC_CH2] == 0) && (rc_values[RC_CH3] == 0) && (rc_values[RC_CH4] == 0)) stop();
 
-  else if (rc_values[RC_CH2] > 1600) front(map(rc_values[RC_CH2], 1600, 2028, 0, 150));
+  else if (rc_values[RC_CH2] > 1600) front(map(rc_values[RC_CH2], 1600, 2028, 50, 255));
 
-  else if (rc_values[RC_CH2] < 1400) back(map(rc_values[RC_CH2], 988, 1400, 0, 150));
+  else if (rc_values[RC_CH2] < 1400) back(map(rc_values[RC_CH2], 988, 1400, 50, 255));
 
-  else if (rc_values[RC_CH1] > 1600) turn_left(map(rc_values[RC_CH1], 1600, 2052, 0, 150));
+  else if (rc_values[RC_CH1] > 1600
+  ) turn_right(map(rc_values[RC_CH1], 1600, 2052, 50, 255));
 
-  else if (rc_values[RC_CH1] < 1400) turn_right(map(rc_values[RC_CH1], 988, 1400, 0, 150));
+  else if (rc_values[RC_CH1] < 1400) turn_left(map(rc_values[RC_CH1], 988, 1400, 50, 255));
 
   else if ((rc_values[RC_CH1] < 1600) && (rc_values[RC_CH1] > 1400) && (rc_values[RC_CH2] < 1600) && (rc_values[RC_CH2] > 1400)) stop();
 
