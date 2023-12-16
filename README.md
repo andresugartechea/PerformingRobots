@@ -10,10 +10,10 @@ Weekly homework:
 [Week 7 (Oct, 9 & 11)](https://github.com/andresugartechea/PerformingRobots/tree/main/week_7/WEEK7.md): Completition of last week's tasks.<br>
 [Week 8 (Oct, 16 & 18)](https://github.com/andresugartechea/PerformingRobots/tree/main/week_8/WEEK8.md): NeoMatrix and Music Maker Shield.<br>
 [Week 9 (Oct 28)](https://github.com/andresugartechea/PerformingRobots/tree/main/week_9/WEEK9.md): Script, first paper and design of robot.<br>
-[Week 10 - 12](https://github.com/andresugartechea/PerformingRobots/tree/main/week_10-12/WEEK10_12.md): Robot mechanically and electrically functional.
+[Week 10 - 12](https://github.com/andresugartechea/PerformingRobots/tree/main/week_10-12/WEEK10_12.md): Robot mechanically and electrically functional.<br>
 [Week 13 - 14](https://github.com/andresugartechea/PerformingRobots/tree/main/week_13-14/WEEK13_14.md): Robot finalized and performance.
 
 Writing Assignments: 
 
-[First Paper: Of Sisyphus, Robots and Absurdism](https://github.com/andresugartechea/PerformingRobots/blob/main/week_9/first_essay/Paper%20-%20Of%20Sisyphus%2C%20Robots%20and%20Absurdism.pdf)
-[Second Paper: Roger Andre Søraa and His Study on Robots and Gender](https://github.com/andresugartechea/PerformingRobots/blob/main/week_9/first_essay/Paper%20-%20Of%20Sisyphus%2C%20Robots%20and%20Absurdism.pdf)
+[First Paper: Of Sisyphus, Robots and Absurdism](https://github.com/andresugartechea/PerformingRobots/blob/main/week_9/first_essay/Paper%20-%20Of%20Sisyphus%2C%20Robots%20and%20Absurdism.pdf)<br>
+[Second Paper: Roger Andre Søraa and His Study on Robots and Gender](https://github.com/andresugartechea/PerformingRobots/blob/main/week_13-14/paperRoger%20Andre%20S%C3%B8raa%20and%20His%20Study%20on%20Robots%20and%20Gender.pdf)
