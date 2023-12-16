@@ -16,4 +16,4 @@ Weekly homework:
 Writing Assignments: 
 
 [First Paper: Of Sisyphus, Robots and Absurdism](https://github.com/andresugartechea/PerformingRobots/blob/main/week_9/first_essay/Paper%20-%20Of%20Sisyphus%2C%20Robots%20and%20Absurdism.pdf)<br>
-[Second Paper: Roger Andre Søraa and His Study on Robots and Gender](https://github.com/andresugartechea/PerformingRobots/blob/main/week_13-14/paperRoger%20Andre%20S%C3%B8raa%20and%20His%20Study%20on%20Robots%20and%20Gender.pdf)
+[Second Paper: Roger Andre Søraa and His Study on Robots and Gender](https://github.com/andresugartechea/PerformingRobots/blob/main/week_13-14/paper/Roger%20Andre%20S%C3%B8raa%20and%20His%20Study%20on%20Robots%20and%20Gender.pdf)
